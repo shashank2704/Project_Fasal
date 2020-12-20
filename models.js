@@ -13,9 +13,17 @@ const userschema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    messages: [{
+    age: {
+        type: Number,
+        min: 0,
+        max=100,
+        required: true,
+    },
+    gender: {
         type: String,
-    }]
+        required: true,
+    }
+    
 });
 
 module.exports = new mongoose.model('user', userschema);

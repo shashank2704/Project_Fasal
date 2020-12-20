@@ -58,7 +58,7 @@ routes.get('/', (req, res) => {
 routes.post('/register', (req, res) => {
     var { email, username, password, confirmpassword } = req.body;
     var err;
-    if (!email || !username || !password || !confirmpassword) {
+    if (!email || !username || !password || !confirmpassword || !gender || !age) {
         err = "Please Fill All The Fields...";
         res.render('index', { 'err': err });
     }
