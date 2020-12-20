@@ -16,7 +16,7 @@ const userschema = new mongoose.Schema({
     age: {
         type: Number,
         min: 0,
-        max=100,
+        max: 100,
         required: true,
     },
     gender: {
