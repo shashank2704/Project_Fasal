@@ -44,7 +44,7 @@ const checkAuthenticated = function (req, res, next) {
 }
 
 
-mongoose.connect('mongodb+srv://Shashank:shimla4u@freecluster.xxz1a.mongodb.net/userDB?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://Shashank:shashank123@freecluster.xxz1a.mongodb.net/userDB?retryWrites=true&w=majority',{
     useNewUrlParser: true, useUnifiedTopology: true,
 }).then(() => console.log("Database Connected")
 );
